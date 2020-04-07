@@ -4,6 +4,17 @@
   "newProjectRoot": "projects",
   "projects": {
     "i18n-hash-issue": {
+      "i18n": {
+        "sourceLocale": {
+          "baseHref": "/"
+        },
+        "locales": {
+          "it": {
+            "baseHref": "/",
+            "translation": "src/locale/messages/it.xlf"
+          }
+        }
+      },
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -19,6 +30,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
+            "outputHashing": "all",
             "assets": [
               "src/favicon.ico",
               "src/assets"
